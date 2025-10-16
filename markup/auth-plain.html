@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register - Task Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+
+    <!-- Main Container -->
+    <div class="flex items-center justify-center min-h-screen px-4">
+        <div class="w-full max-w-md">
+
+            <!-- Auth Card -->
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+
+                <!-- Header -->
+                <div class="text-center mb-8">
+                    <h1 class="text-3xl font-bold text-gray-800 mb-2">✨ Task Manager</h1>
+                    <p class="text-gray-600">Organize your life, one task at a time</p>
+                </div>
+
+                <!-- Error Message (Hidden by default) -->
+                <div class="hidden bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-4">
+                    <p class="text-sm">Error message will appear here</p>
+                </div>
+
+                <!-- Success Message (Hidden by default) -->
+                <div class="hidden bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg mb-4">
+                    <p class="text-sm">Success message will appear here</p>
+                </div>
+
+                <!-- Toggle Tabs -->
+                <div class="flex border-b border-gray-200 mb-6">
+                    <button
+                        class="flex-1 py-2 font-medium transition-colors border-b-2 border-indigo-500 text-indigo-600">
+                        Login
+                    </button>
+                    <button
+                        class="flex-1 py-2 font-medium transition-colors text-gray-500">
+                        Register
+                    </button>
+                </div>
+
+                <!-- Login Form -->
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                            placeholder="demo@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                        <input
+                            type="password"
+                            name="password"
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                            placeholder="password">
+                    </div>
+                    <button
+                        type="submit"
+                        class="w-full bg-indigo-600 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors">
+                        Login 🚀
+                    </button>
+                </form>
+
+                <!-- Register Form (Hidden by default) -->
+                <form class="space-y-4 hidden">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input
+                            type="text"
+                            name="name"
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                            placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                            placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                        <input
+                            type="password"
+                            name="password"
+                            required
+                            minlength="8"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                            placeholder="min. 8 characters">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Confirm Password</label>
+                        <input
+                            type="password"
+                            name="password_confirmation"
+                            required
+                            minlength="8"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                            placeholder="same as above">
+                    </div>
+                    <button
+                        type="submit"
+                        class="w-full bg-indigo-600 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors">
+                        Create Account 🎉
+                    </button>
+                </form>
+
+                <!-- Demo Credentials -->
+                <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                    <p class="text-sm text-gray-600 text-center">
+                        <strong>Demo Account:</strong><br>
+                        Email: demo@example.com<br>
+                        Password: password
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Note: Add your JavaScript here to handle form submissions and tab switching -->
+    <script>
+        // Plain JavaScript can be added here for functionality
+        // This file contains only the HTML structure
+        console.log('Auth page loaded - Ready for Alpine.js conversion');
+    </script>
+
+</body>
+</html>
